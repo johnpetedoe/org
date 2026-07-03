@@ -4,20 +4,22 @@
 //c0 starts with consistent systems and makes no assumptions regarding derivable theorems.
     // 1) Derive theorems using consistant systems
     // 2) Compute interpretations theorems as:
-            0) Mathematical hypothesies
-            1) Metaphysical hypothesies
-            2) Physical hypothesies
-            2) Scientific hypothesies
-            3) Ethical hypothesies
+           // 0) Mathematical hypothesies
+           // 1) Metaphysical hypothesies
+           // 2) Physical hypothesies
+           // 2) Scientific hypothesies
+           // 3) Ethical hypothesies
           
-          Using maps of isomorphisms. 
+        //  Using maps of isomorphisms. 
             
 //c1 serves the following purposes:
     // 1) Formulation of arguments/states 
     // 2) Production of system(s) where theorem(s) representing the states/conclusions of arguments are derivable while maintaining internal consistancy.
     // 3) Production of a super-systems where both real and virtual state/conclusions are consistantly derivable. Establishing external consistancy for systems refered to by 2. 
 
+#include <unistd.h>
 #include <stdlib.h>
+
 # define SUM_OF_CARDINALITY_OF_HOMSETS //IMP: Make this dynamic
 # define NUMBER_OF_OBJECTS             //IMP: Make this dynamic
 
@@ -57,12 +59,16 @@ t_morphism  *morph(t_object *object_0, t_object *object_1) {
     DYNAMIC_ALLOCATION(t_morphism, morphism);
 }
 
+
+
 int main (void) {
     t_category_morphism           **morphisms;
     t_category_object               **objects;
     
     objects = (**t_category_objects)malloc(sizeof(t_category_objects) * NUMBER_OF_OBJECTS);
-    objects[0] = new_object()
+    objects[0] = t_formula_category_object_constructor(t_formula);             // TODO: trace and refactor
+    objects[1] = t_formula_category_object_constructor();
+
     morphisms = ( **t_category_morphism )malloc( sizeof(t_category_morphism) * SUM_OF_CARDINALITIES_OF_HOMSETS )
     morphisms[0] = morph (t_interview_ref, t_argument_ref);
     morphisms[1] = morph (t_argument_ref, t_formulation_ref);
