@@ -16,7 +16,7 @@
     // 1) Formulation of arguments/states 
     // 2) Production of system(s) where theorem(s) representing the states/conclusions of arguments are derivable while maintaining internal consistancy.
     // 3) Production of a super-systems where both real and virtual state/conclusions are consistantly derivable. Establishing external consistancy for systems refered to by 2. 
-
+    
 #include <unistd.h>
 #include <stdlib.h>
 
